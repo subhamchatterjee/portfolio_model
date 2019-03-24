@@ -1,0 +1,154 @@
+.portfolio-constituents-page-container
+  padding: 20px 6%
+  .header-container
+    display: flex
+    align-items: center
+    margin-bottom: 20px
+    padding-bottom: 10px
+    border-bottom: 1px solid #ccc
+    justify-content: space-between
+    .header-title
+      font-size: 24px
+      > i.fa
+        color: #777
+        cursor: pointer
+        margin-right: 8px
+        transition: all 0.4s ease
+        &:hover
+          color: #444
+    .header-buttons
+      display: flex
+      > button
+        border: 0
+        color: #fff
+        margin: 0 8px
+        font-weight: 600
+        background-color: #459cb4
+        box-shadow: 1px 1px 1px 0.5px #666
+  .constituents-container
+    padding: 0
+    border: 1px solid #ddd
+    .constituents-header-container
+      display: flex
+      padding: 10px 15px
+      border-bottom: 1px solid #ddd
+      .type-col-header
+        width: 50%
+        padding: 0 5px
+      .model-weight-col-header, .weight-col-header
+        width: 25%
+        padding: 0 5px
+        text-align: right
+    .all-constituents-content-container
+      > div[class$="-constituents-content-container"]
+        > .constituents-type-row-container
+          display: flex
+          padding: 10px 15px
+          background-color: #fafafa
+          border-bottom: 1px solid #ddd
+          border-left: 5px solid #ed5e36
+          .constituents-type-container
+            width: 50%
+            display: flex
+            padding: 0 5px
+            align-items: center
+            justify-content: space-between
+            .constituents-type
+              font-size: 12px
+              font-weight: 600
+            button.add-constituent
+              border: 0
+              color: #459cb4
+              font-size: 13px
+              box-shadow: none
+              background: none
+              font-weight: 500
+              min-width: 120px
+              text-align: left
+              > i.fa
+                margin-right: 4px
+          .constituents-model-weight-container, .constituents-weight-container
+            width: 25%
+            color: #000
+            padding: 0 5px
+            font-size: 12px
+            font-weight: 600
+            text-align: right
+        .constituent-row-container
+          display: flex
+          padding: 10px 15px
+          align-items: center
+          border-bottom: 1px solid #ddd
+          .constituent-name-container
+            width: 50%
+            display: flex
+            align-items: center
+            > i.fa
+              color: #9f9f9f
+              cursor: pointer
+              padding: 2px 6px
+              transition: all 0.4s ease
+              &:hover
+                color: #444
+              &.fa-lock
+                color: #ec3e33
+            .constituent-name
+              padding: 0 5px
+          .constituent-model-weight, .constituent-weight-container
+            width: 25%
+            color: #333
+            padding: 0 5px
+            font-size: 12px
+            text-align: right
+          .constituent-weight-container
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            > i.fa
+              color: #9f9f9f
+              cursor: pointer
+              padding: 2px 6px
+              transition: all 0.4s ease
+              &:hover
+                color: #444
+            > input.constituent-weight-input
+              width: 50px
+              padding: 2px 3px
+              box-shadow: none
+              border-radius: 4px
+              border: 1px solid #999
+
+@media (max-width: 480px)
+  .portfolio-constituents-page-container
+    padding: 20px 15px
+    .header-container
+      flex-direction: column
+      .header-buttons
+        display: flex
+    .constituents-container
+      .constituents-header-container
+        padding: 10px 5px
+        .type-col-header
+          width: calc(100% - 180px)
+        .model-weight-col-header
+          width: 80px
+        .weight-col-header
+          width: 100px
+      .all-constituents-content-container
+        > div[class$="-constituents-content-container"]
+          > .constituents-type-row-container
+            padding: 10px 5px
+            .constituents-type-container
+              width: calc(100% - 180px)
+            .constituents-model-weight-container
+              width: 80px
+            .constituents-weight-container
+              width: 100px
+          .constituent-row-container
+            padding: 10px 5px
+            .constituent-name-container
+              width: calc(100% - 180px)
+            .constituent-model-weight
+              width: 80px
+            .constituent-weight-container
+              width: 100px
