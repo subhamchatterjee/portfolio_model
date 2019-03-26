@@ -20,15 +20,6 @@ const DefaultPortfolioLayout = ({ component: Component, ...rest }) => {
 };
 
 export default class Routes extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-		};
-	}
-
-	componentWillMount() {
-	}
-
 	render() {
 		return (
 			<Router>

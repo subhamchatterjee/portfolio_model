@@ -11,9 +11,9 @@ var buildPath = '/build';
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
     filename: 'index.js',
-    publicPath: '/'
+    publicPath: './'
   },
   module: {
     rules: [
@@ -36,7 +36,7 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, 'build'),
     compress: true,
     port: 3000
   },
