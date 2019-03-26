@@ -13,7 +13,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'index.js',
-    publicPath: './'
+    publicPath: '/'
   },
   module: {
     rules: [
